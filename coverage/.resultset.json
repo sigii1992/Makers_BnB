@@ -20,8 +20,16 @@
       },
       "/Users/tati/Projects/Week5/Makers_BnB/spec/features/view_properties_spec.rb": {
         "lines": [
+          1,
           null,
-          1
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
         ]
       },
       "/Users/tati/Projects/Week5/Makers_BnB/spec/properties_spec.rb": {
@@ -32,6 +40,6 @@
         ]
       }
     },
-    "timestamp": 1636997273
+    "timestamp": 1636998099
   }
 }

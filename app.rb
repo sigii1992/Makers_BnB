@@ -10,8 +10,13 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/' do
-    'Hello from the MakersBnB app!'
+    erb :index
+  end
+
+  get '/properties' do
+   "Property 1"
   end
 
   run! if app_file == $PROGRAM_NAME
 end
+
