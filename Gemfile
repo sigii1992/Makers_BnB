@@ -1,14 +1,14 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-gem 'sinatra'
-gem 'sinatra-reloader'
 gem 'capybara'
 gem 'pg'
 gem 'rspec'
-gem 'webrick'
-gem 'sinatra-contrib'
+gem 'rubocop'
 gem 'simplecov'
 gem 'simplecov-console'
-gem 'rubocop'
-
-
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'sinatra-reloader'
+gem 'webrick'
