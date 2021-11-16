@@ -1,0 +1,19 @@
+<h1> Add new property </h1>
+
+<form action="/properties/new" method="post">
+  <div >
+    <label for="name"> Name: </label>
+    <input type="text" name="name" placeholder="Property Name" required>
+  </div>
+  <div>
+    <label for="description"> Description: </label>
+    <input type="text" name="description" placeholder="This property blabla..." required>
+  </div>
+    <div>
+    <label for="price_per_night"> Price per night (£) </label>
+    <input type="text" name="price_per_night" placeholder="£..." required>
+  </div>
+  <div>
+    <input type="submit" value="List property">
+  </div>
+</form>

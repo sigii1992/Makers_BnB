@@ -14,7 +14,17 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/properties' do
-   "Property 1"
+    @properties = Property.all
+   erb :'properties/view'
+  end
+
+  get '/properties/new' do
+    erb :'properties/new'
+  end
+
+  post '/properties/new' do
+    Property.create(params[:name], params[:description], params[:price_per_night])
+   redirect '/properties'
   end
 
   run! if app_file == $PROGRAM_NAME
