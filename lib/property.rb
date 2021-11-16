@@ -2,9 +2,10 @@ require 'pg'
 
 class Property
 
-  attr_reader :name, :description, :price_per_night
+  attr_reader :name, :description, :price_per_night, :id
 
-  def initialize(name:, description:, price_per_night:)
+  def initialize(id:, name:, description:, price_per_night:)
+    @id = id
     @name = name
     @description = description
     @price_per_night = price_per_night

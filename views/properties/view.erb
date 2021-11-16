@@ -1,6 +1,14 @@
 <h1> View properties </h1>
 <ul style="list-style-type:none;">
 <% @properties.each do |property| %>
-  <li> <%= property %> </li>
+  <li> <%= property.name %>  
+    <ul> 
+      <li> Property description: <%= property.description %> </li>
+      <li> Price per night: £<%= property.price_per_night %> </li>
+    </ul>
+  </li>
 <% end %>
 </ul>  
+<a href="/properties/new">
+    <button>Add property</button>
+</a>

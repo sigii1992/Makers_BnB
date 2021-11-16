@@ -23,8 +23,8 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/properties/new' do
-    Property.create(params[:name], params[:description], params[:price_per_night])
-   redirect '/properties'
+    Property.create(name: params[:name], description: params[:description], price_per_night: params[:price_per_night])
+    redirect '/properties'
   end
 
   run! if app_file == $PROGRAM_NAME
