@@ -1,12 +1,12 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/tati/Projects/Week5/Makers_BnB/spec/features/add_properties_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/features/add_properties_spec.rb": {
         "lines": [
 
         ]
       },
-      "/Users/tati/Projects/Week5/Makers_BnB/spec/features/index_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/features/index_spec.rb": {
         "lines": [
           null,
           null,
@@ -18,7 +18,7 @@
           null
         ]
       },
-      "/Users/tati/Projects/Week5/Makers_BnB/spec/features/view_properties_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/features/view_properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -32,7 +32,7 @@
           null
         ]
       },
-      "/Users/tati/Projects/Week5/Makers_BnB/spec/properties_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/properties_spec.rb": {
         "lines": [
           null,
           null,
@@ -40,6 +40,6 @@
         ]
       }
     },
-    "timestamp": 1636998099
+    "timestamp": 1637057220
   }
 }

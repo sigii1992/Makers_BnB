@@ -1,5 +1,3 @@
-
-
 require 'pg'
 
 class Property
