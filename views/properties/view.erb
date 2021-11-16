@@ -5,6 +5,12 @@
     <ul> 
       <li> Property description: <%= property.description %> </li>
       <li> Price per night: £<%= property.price_per_night %> </li>
+      <li> Available to book?
+       <% if property.available == true %>
+        Yes
+        <% else %>
+        No 
+        <% end %> </li>
     </ul>
   </li>
 <% end %>
