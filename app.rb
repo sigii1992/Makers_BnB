@@ -27,6 +27,23 @@ class MakersBnB < Sinatra::Base
     redirect '/properties'
   end
 
+  get '/users/new' do
+    erb :'users/new'
+  end
+
+  post '/users/new' do
+    # Users.create(name: params[:name], email: params[:email], password: params[:password])
+    # users=[params[:name], params[:email], params[:password]]
+    users={name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123' }
+    redirect '/users/thankyou'
+  end
+
+  get '/users/thankyou' do
+    erb :'users/thankyou'
+  end
+
+
+
   run! if app_file == $PROGRAM_NAME
 end
 
