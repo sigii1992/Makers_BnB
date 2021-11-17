@@ -32,9 +32,8 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/users/new' do
-    # Users.create(name: params[:name], email: params[:email], password: params[:password])
-    # users=[params[:name], params[:email], params[:password]]
-    users={name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123' }
+    Users.create(name: params[:name], email: params[:email], password: params[:password])
+   # users={name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123' }
     redirect '/users/thankyou'
   end
 
