@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/features/add_properties_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/features/add_properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -23,7 +23,7 @@
           null
         ]
       },
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/features/index_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/features/index_spec.rb": {
         "lines": [
           null,
           null,
@@ -35,7 +35,7 @@
           null
         ]
       },
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/features/view_properties_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/features/view_properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -53,7 +53,7 @@
           null
         ]
       },
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/properties_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -73,6 +73,6 @@
         ]
       }
     },
-    "timestamp": 1637076148
+    "timestamp": 1637146070
   }
 }
