@@ -4,6 +4,8 @@ require 'sinatra/reloader'
 require './lib/property'
 
 class MakersBnB < Sinatra::Base
+  enable :sessions
+
   configure :development do
     register Sinatra::Reloader
   end
@@ -14,7 +16,7 @@ class MakersBnB < Sinatra::Base
 
   get '/properties' do
     @properties = Property.all
-   erb :'properties/view'
+    erb :'properties/view'
   end
 
   get '/properties/new' do
