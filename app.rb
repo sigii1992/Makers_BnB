@@ -1,5 +1,4 @@
-
-
+require './lib/user'
 require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/property'
@@ -32,8 +31,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/users/new' do
-    Users.create(name: params[:name], email: params[:email], password: params[:password])
-   # users={name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123' }
+    User.create(name: params[:name], email: params[:email], password: params[:password])
     redirect '/users/thankyou'
   end
 
