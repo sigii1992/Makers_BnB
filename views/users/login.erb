@@ -1,10 +1,6 @@
-<h1> Enter your details </h1>
+<h2> Please enter your log in details </h2>
 
-<form action="/users/new" method="post">
-  <div>
-    <label for="name"> Name: </label>
-    <input type="text" name="name" placeholder="Your Name" required>
-  </div>
+<form action="/users/login" method="post">
   <div>
     <label for="email"> Email: </label>
     <input type="text" name="email" placeholder="123@gmail.com" required>
@@ -14,6 +10,7 @@
     <input type="text" name="password" placeholder="keep it secret" required>
   </div>
   <div>
-    <input type="submit" value="Register">
+    <input type="submit" value="Sign in">
   </div>
 </form>
+

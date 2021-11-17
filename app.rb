@@ -39,7 +39,14 @@ class MakersBnB < Sinatra::Base
     erb :'users/thankyou'
   end
 
+  get '/users/login' do
+    erb :'users/login'
+  end
 
+  post '/users/login' do
+    user = { email: 'hagrid@gmail.com', password: 'hagrid123' }
+    redirect '/properties'
+  end
 
   run! if app_file == $PROGRAM_NAME
 end
