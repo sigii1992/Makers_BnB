@@ -2,7 +2,7 @@
 
 MVP - Our MVP allows for a user to add properties and view available properties which a user can book. 
 
-## User Stories
+## MVP User Stories
 
 ```
 As a user 
