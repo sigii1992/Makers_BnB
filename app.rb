@@ -16,6 +16,7 @@ class MakersBnB < Sinatra::Base
 
   get '/properties' do
     @properties = Property.all
+    @current_user = session[:name]
     erb :'properties/view'
   end
 
@@ -45,10 +46,21 @@ class MakersBnB < Sinatra::Base
     erb :'users/login'
   end
 
+  # post '/users/login' do
+  #   p session[:name] = User.log_in(email: params[:email], password: params[:password])
+  #    p @current_user = session[:name]
+  #   redirect '/properties'
+  # end
+
   post '/users/login' do
-    user = { email: 'hagrid@gmail.com', password: 'hagrid123' }
-    redirect '/properties'
+    @user = User.log_in(email: params[:email], password: params[:password])
+      session[:name] = @user.name
+      session[:email] = @user.email
+      session[:id] = User.find_id(email: @user.email)
+      redirect '/properties'
   end
+
+
 
   run! if app_file == $PROGRAM_NAME
 end
