@@ -37,7 +37,7 @@ attr_reader :id, :name, :email, :password
 
   def self.log_in(email:, password:)
     if ENV['ENVIRONMENT'] == "test"
-       connection = PG.connect(dbname: 'makersbnb_test')
+      connection = PG.connect(dbname: 'makersbnb_test')
     else
       connection = PG.connect(dbname: 'makersbnb')
     end
@@ -45,19 +45,7 @@ attr_reader :id, :name, :email, :password
     result = connection.exec("SELECT * FROM users WHERE email = $1", [email])
     return unless result.any?
     return unless result[0]['password'] == password
-    User.new (email: result[0]['email'], name: result[0]['name'])
+    User.new(email: result[0]['email'], name: result[0]['name'], id: result[0]['id'], password: result[0]['password'])
   end
-
-
-        # def log_in(email:, password:)
-        #   if user.email == false
-        #     "User does not exist" 
-        #   else
-        #    if user.password == password
-        #     "Welcome to the page"
-        #    else 
-        #   end
-        # end
-
 
 end
