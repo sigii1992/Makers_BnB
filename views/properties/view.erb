@@ -35,9 +35,18 @@
     </div>
   <% end %>
 
-
+<% if @current_user != nil %>
 <div>
   <form action="/users/logout" method="post">
     <input type="submit" value="Sign out" />
   </form>
 </div>
+
+ <% else %>
+
+<div>
+  <a href="/users/new">
+    <button>Sign up</button>
+  </a>
+</div>
+ <% end %>
