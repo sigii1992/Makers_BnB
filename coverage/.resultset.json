@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/features/add_properties_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/features/add_properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -23,7 +23,7 @@
           null
         ]
       },
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/features/add_users_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/features/add_users_spec.rb": {
         "lines": [
           1,
           null,
@@ -46,7 +46,7 @@
           null
         ]
       },
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/features/index_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/features/index_spec.rb": {
         "lines": [
           null,
           null,
@@ -58,7 +58,7 @@
           null
         ]
       },
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/features/login_users_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/features/login_users_spec.rb": {
         "lines": [
           1,
           null,
@@ -79,7 +79,7 @@
           null
         ]
       },
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/features/view_properties_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/features/view_properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -97,7 +97,7 @@
           null
         ]
       },
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/properties_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -116,7 +116,7 @@
           null
         ]
       },
-      "/Users/sigitaz/Documents/Projects/Makers_BnB/spec/users_spec.rb": {
+      "/Users/mona/Projects/Makers_BnB/spec/users_spec.rb": {
         "lines": [
           1,
           null,
@@ -131,6 +131,7 @@
           null,
           null,
           null,
+          null,
           1,
           1,
           1,
@@ -138,6 +139,26 @@
           1,
           null,
           1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -146,6 +167,6 @@
         ]
       }
     },
-    "timestamp": 1637170205
+    "timestamp": 1637236996
   }
 }
