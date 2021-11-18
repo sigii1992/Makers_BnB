@@ -26,3 +26,12 @@ describe '.log_in' do
     expect(user.name).to eq 'Hagrid'
   end
 end
+
+# describe '.logout' do
+#   it 'logs a user out' do
+#     User.create(name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123')
+#     user = User.log_in(email: 'hagrid@gmail.com', password: 'hagrid123')
+#     # user.log_out
+#     expect(user.name).to eq nil
+#   end
+# end

@@ -1,5 +1,9 @@
 <h1> View properties </h1>
-<h2>Hello <%= "#{@current_user}" %> </h2>
+
+  <% unless @current_user == nil %>
+    <h2>Hello <%= "#{@current_user}" %> </h2>
+  <% end %>
+
 <ul style="list-style-type:none;">
 <% @properties.each do |property| %>
   <li> <%= property.name %>  
@@ -16,6 +20,24 @@
   </li>
 <% end %>
 </ul>  
-<a href="/properties/new">
-    <button>Add property</button>
-</a>
+
+<% if @current_user != nil %>
+  <div>
+    <a href="/properties/new">
+      <button>Add property</button>
+    </a>
+  </div>
+  <% else %>
+    <div>
+      <a href="/users/login">
+        <button>Log in </button>
+      </a>
+    </div>
+  <% end %>
+
+
+<div>
+  <form action="/users/logout" method="post">
+    <input type="submit" value="Sign out" />
+  </form>
+</div>

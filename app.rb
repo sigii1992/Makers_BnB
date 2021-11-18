@@ -46,12 +46,6 @@ class MakersBnB < Sinatra::Base
     erb :'users/login'
   end
 
-  # post '/users/login' do
-  #   p session[:name] = User.log_in(email: params[:email], password: params[:password])
-  #    p @current_user = session[:name]
-  #   redirect '/properties'
-  # end
-
   post '/users/login' do
     @user = User.log_in(email: params[:email], password: params[:password])
       session[:name] = @user.name
@@ -60,6 +54,10 @@ class MakersBnB < Sinatra::Base
       redirect '/properties'
   end
 
+  post '/users/logout' do
+    session.clear 
+    redirect('/')
+  end
 
 
   run! if app_file == $PROGRAM_NAME
