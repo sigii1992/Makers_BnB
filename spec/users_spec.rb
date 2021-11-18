@@ -2,12 +2,16 @@ require 'user'
 
 describe '.create' do
   it 'create new user' do
-    connection = PG.connect(dbname: 'makersbnb_test')
     user = User.create(name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123')
    
     expect(user.name).to eq 'Hagrid'
     expect(user.email).to eq 'hagrid@gmail.com'
-    expect(user.password).to eq 'hagrid123'
+    # expect(user.password).to exist?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  end
+
+  it 'hashes the password using BCrypt' do
+    expect(BCrypt::Password).to receive(:create).with('hagrid123')
+    User.create(name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123')
   end
 end
 
@@ -21,17 +25,9 @@ end
 
 describe '.log_in' do 
   it 'logs in a user' do
-    User.create(name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123')
-    user = User.log_in(email: 'hagrid@gmail.com', password: 'hagrid123')
-    expect(user.name).to eq 'Hagrid'
+    user = User.create(name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123')
+    authenticated_user = User.log_in('hagrid@gmail.com','hagrid123')
+    # took colon
+    expect(authenticated_user.id).to eq user.id
   end
 end
-
-# describe '.logout' do
-#   it 'logs a user out' do
-#     User.create(name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123')
-#     user = User.log_in(email: 'hagrid@gmail.com', password: 'hagrid123')
-#     # user.log_out
-#     expect(user.name).to eq nil
-#   end
-# end
