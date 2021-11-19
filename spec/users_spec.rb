@@ -6,7 +6,6 @@ describe '.create' do
    
     expect(user.name).to eq 'Hagrid'
     expect(user.email).to eq 'hagrid@gmail.com'
-    # expect(user.password).to exist?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   end
 
   it 'hashes the password using BCrypt' do
@@ -26,8 +25,7 @@ end
 describe '.log_in' do 
   it 'logs in a user' do
     user = User.create(name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123')
-    authenticated_user = User.log_in('hagrid@gmail.com','hagrid123')
-    # took colon
+    authenticated_user = User.log_in(email: 'hagrid@gmail.com', password: 'hagrid123')
     expect(authenticated_user.id).to eq user.id
   end
 end

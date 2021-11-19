@@ -1,5 +1,3 @@
-
-
 feature 'Test' do
   scenario 'index page works' do
     visit('/')

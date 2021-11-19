@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/tatiananantes/Makers/Week55/Makers_BnB/spec/features/add_properties_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/features/add_properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -28,7 +28,7 @@
           null
         ]
       },
-      "/Users/tatiananantes/Makers/Week55/Makers_BnB/spec/features/add_users_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/features/add_users_spec.rb": {
         "lines": [
           1,
           null,
@@ -51,10 +51,8 @@
           null
         ]
       },
-      "/Users/tatiananantes/Makers/Week55/Makers_BnB/spec/features/index_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/features/index_spec.rb": {
         "lines": [
-          null,
-          null,
           1,
           1,
           1,
@@ -63,15 +61,13 @@
           null
         ]
       },
-      "/Users/tatiananantes/Makers/Week55/Makers_BnB/spec/features/login_users_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/features/login_users_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
-          null,
-          null,
           null,
           1,
           1,
@@ -83,7 +79,7 @@
           null
         ]
       },
-      "/Users/tatiananantes/Makers/Week55/Makers_BnB/spec/features/logout_users_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/features/logout_users_spec.rb": {
         "lines": [
           1,
           null,
@@ -106,14 +102,12 @@
           null
         ]
       },
-      "/Users/tatiananantes/Makers/Week55/Makers_BnB/spec/features/view_properties_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/features/view_properties_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          1,
-          null,
           1,
           null,
           1,
@@ -124,7 +118,7 @@
           null
         ]
       },
-      "/Users/tatiananantes/Makers/Week55/Makers_BnB/spec/properties_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/properties_spec.rb": {
         "lines": [
           1,
           null,
@@ -143,7 +137,7 @@
           null
         ]
       },
-      "/Users/tatiananantes/Makers/Week55/Makers_BnB/spec/users_spec.rb": {
+      "/Users/ryangrimes/Makers/week_5/Makers_BnB/spec/users_spec.rb": {
         "lines": [
           1,
           null,
@@ -155,7 +149,6 @@
           1,
           null,
           null,
-          null,
           1,
           1,
           1,
@@ -174,13 +167,12 @@
           1,
           1,
           1,
-          null,
-          0,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1637257963
+    "timestamp": 1637314069
   }
 }
