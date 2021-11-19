@@ -1,10 +1,13 @@
 require './lib/user'
 require 'sinatra/base'
 require 'sinatra/reloader'
+require 'sinatra/flash'
 require './lib/property'
 
 class MakersBnB < Sinatra::Base
   enable :sessions
+
+  register Sinatra::Flash
 
   configure :development do
     register Sinatra::Reloader
@@ -54,7 +57,7 @@ class MakersBnB < Sinatra::Base
       session[:id] = User.find_id(email: @user.email)
       redirect '/properties'
     else
-      session[:error] = "FAIL. Email or password were incorrect. Try harder next time."
+      flash[:warning] = "FAIL. Email or password were incorrect. Try harder next time."
       redirect '/users/login'
     end
   end

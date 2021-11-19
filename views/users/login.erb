@@ -1,5 +1,12 @@
 <h2> Please enter your log in details </h2>
 
+<% flash.keys.each do |type| %>
+  <div data-alert class="flash <%= type %> alert-box radius">
+    <%= flash[type] %>
+    <a href="#" class="close">&times;</a>
+  </div>
+<% end %>
+
 <form action="/users/login" method="post">
   <div>
     <label for="email"> Email: </label>
