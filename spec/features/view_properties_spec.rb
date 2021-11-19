@@ -5,7 +5,7 @@ feature 'View all properties' do
     Property.create(name: 'Buckingham Palace', description: "Big old house, one old lady currently inhabiting", price_per_night: 10)
 
     visit('/')
-    click_button('View Properties')
+    click_link('click here')
     visit('/properties')
     expect(page).to have_content('Buckingham Palace')
   end 

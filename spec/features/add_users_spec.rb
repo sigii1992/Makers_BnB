@@ -5,7 +5,7 @@ feature 'register new user' do
     connection = PG.connect(dbname: 'makersbnb_test')
 
     visit('/')
-    click_button('Sign up')
+    click_link('sign up')
     visit('/users/new')
     fill_in :name, with: 'Hagrid'
     fill_in :email, with: 'hagrid@gmail.com'

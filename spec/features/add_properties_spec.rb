@@ -2,11 +2,10 @@ require 'pg'
 
 feature 'add new properties' do
   scenario 'a property can be added to the database' do
-    # connection = PG.connect(dbname: 'makersbnb_test')
     User.create(name: 'Hagrid', email: 'hagrid@gmail.com', password: 'hagrid123')
 
     visit('/')
-    click_button('Log in')
+    click_link('log in')
     visit('/users/login')
     fill_in :email, with: 'hagrid@gmail.com'
     fill_in :password, with: 'hagrid123'
