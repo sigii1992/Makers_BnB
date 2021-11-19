@@ -44,8 +44,10 @@ attr_reader :id, :name, :email, :password
     else
       connection = PG.connect(dbname: 'makersbnb')
     end
-
+    
     result = connection.exec("SELECT * FROM users WHERE email = $1", [email])
+    return unless result.any?
+    return unless BCrypt::Password.new(result[0]['password']) == password
     User.new(email: result[0]['email'], name: result[0]['name'], id: result[0]['id'], password: result[0]['password'])
   end
 end

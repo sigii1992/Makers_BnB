@@ -48,10 +48,15 @@ class MakersBnB < Sinatra::Base
 
   post '/users/login' do
     @user = User.log_in(email: params[:email], password: params[:password])
+    if @user
       session[:name] = @user.name
       session[:email] = @user.email
       session[:id] = User.find_id(email: @user.email)
       redirect '/properties'
+    else
+      session[:error] = "FAIL. Email or password were incorrect. Try harder next time."
+      redirect '/users/login'
+    end
   end
 
   post '/users/logout' do
